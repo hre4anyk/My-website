@@ -1,0 +1,494 @@
+
+@font-face {
+    font-family: 'TheSeasonsFont';
+    src: url("./Demo_Fonts/TheSeasons/Fontspring-DEMO-theseasons-reg.otf");
+  }
+ 
+  @font-face {
+    font-family: 'TT Hoves';
+    src: url("./Demo_Fonts/TT Hoves/TTHoves-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 26.6667px;
+    font-weight: 400;
+    font-family: "TheSeasonsFont", sans-serif;
+}
+
+
+h1 {
+    font-size: 92px;
+}
+
+h2  {
+    font-size: 60px;
+} 
+
+h3  {
+    font-family: "TT Hoves", sans-serif;
+    font-size: 26px;
+} 
+
+h4  {
+    font-family: "TT Hoves", sans-serif;
+    font-size: 22px;
+} 
+
+h5  {
+    font-family: "TT Hoves", sans-serif;
+    font-size: 18px;
+} 
+
+
+
+.container {
+   display: flex;
+    margin: 71.965px;
+    height: 90vh;
+}
+
+.text-container {
+padding-left: 75px;
+
+}
+
+.title {
+    outline: 1px solid white;
+    border-radius: 50px;
+    display: inline-flex;
+    margin-top: 15px;
+    padding: 25px;
+}
+
+.image-container {
+    padding: 50px; /* Add padding to prevent clipping */
+    margin-left: 75px;
+    padding-top: 0px;
+    }
+  
+
+.rotated-oval {
+    height: 100%;
+    padding-right: 50px;
+    transform: rotate(20deg); /* Rotate the oval */
+    border-radius: 50%; /* Makes the mask elliptical */
+    overflow: hidden;
+    background-color: aqua;
+      }
+      
+.Nazar-picture {
+        height: 125%;
+        width: 140%;
+        object-fit: cover; /* Ensures the image covers the oval completely */
+        transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
+            
+        }
+
+.icons {
+        display: flex;
+        color: white;
+        justify-content: end;
+        gap: 10px;
+        margin-right: 0px;
+      }  
+
+.icon {
+        display: flex;
+        gap: 10px;
+    }     
+
+.container-2 {
+    display: flex;
+    margin: 71.965px;
+    margin-bottom: 0px;
+    padding: 0px 12px;
+    height: 80vh;
+
+}
+
+.oval {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; /* Makes the mask elliptical */
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.Think-outside {
+    height: 100%;
+    width:100%;
+}
+
+.line {
+    margin-top: 30px;
+    border-bottom: 2px solid white;
+    width: 40%;
+}
+
+
+.container-3 {
+    display: flex;
+    margin: 71.965px;
+    padding: 0px 12px;
+    height: 90vh;
+}
+
+.list-1 {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-container {
+    margin-top: 250px;
+
+}
+
+
+.container-4 {
+    display: block;
+    margin: 71.965px;
+    padding: 0px 12px;
+    height: 80vh;
+}
+
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 50px;
+
+}
+
+.column1-content{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.slide4-images {
+    height: 300px;
+    width: 100%; /* Match the width of the container */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.container-5 {
+    display: block;
+    margin: 71.965px;
+    padding: 0px 12px;
+    height: 90vh;
+}
+.grid-container-2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 250px;
+
+}
+
+.slide5-images {
+    height: 300px;
+    width: 100%; /* Match the width of the container */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.container-6 {
+    display: flex;
+     margin: 71.965px;
+     height: 90vh;
+ }
+
+.Coding-picture {
+    height: 125%;
+    width: 135%;
+    object-fit: cover; /* Ensures the image covers the oval completely */
+    transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
+}
+
+.quote {
+    font-size: 55px;
+    text-align: left;
+    justify-self: center;   
+}
+
+.container-7 {
+    margin: 71.965px;
+    margin-bottom: 0px;
+    padding: 0px 12px;
+    display: flex;
+    padding: 0px 12px;
+    height: 90vh;
+
+    
+}
+
+.column1-content-6 {
+    display: flex;
+}
+
+.Text-slide6 {
+    display: inline-block;
+}
+
+.container-8 {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 12px;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    
+}
+
+/*  Mobile Resizing BELOW ->>> */
+
+@media (max-width:600px) {
+
+    .container, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .grid-container, .grid-container-2 {
+    display: block;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+        font-size: 26.6667px;
+        font-weight: 400;
+        font-family: "TheSeasonsFont", sans-serif;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2  {
+        font-size: 45px;
+    } 
+    
+    h3  {
+        font-family: "TT Hoves", sans-serif;
+        font-size: 20px;
+    } 
+    
+    h4  {
+        font-family: "TT Hoves", sans-serif;
+        font-size: 16px;
+    } 
+    
+    h5  {
+        font-family: "TT Hoves", sans-serif;
+        font-size: 12px;
+    } 
+    
+    
+    .container {
+  
+        margin: 71.965px;
+        height: 90vh;
+    }
+    
+    .text-container {
+    padding-left: 0px;
+    text-align: left;
+    margin-bottom: 25px;
+    
+    }
+    
+    .title {
+        outline: 1px solid white;
+        border-radius: 50px;
+        margin-top: 15px;
+        padding: 25px;
+    }
+    
+    .image-container {
+        padding: 0px; /* Add padding to prevent clipping */
+        margin-left: 0px;
+        padding-top: 0px;
+        
+        }
+      
+    
+    .rotated-oval {
+        width: 300px;
+        height: 100%;
+        padding-right: 0px;
+        transform: rotate(20deg); /* Rotate the oval */
+        border-radius: 50%; /* Makes the mask elliptical */
+        overflow: hidden;
+        background-color: aqua;
+        margin-bottom: 25px;
+        margin-left: 0px;
+          }
+          
+    .Nazar-picture {
+            height: 150%;
+            width: 150%;
+            margin-left: 0px;
+            object-fit: contain; /* Ensures the image covers the oval completely */
+            transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
+                
+            }
+    
+    .icons {
+            color: white;
+            justify-content: center;
+            gap: 10px;
+            margin-right: 0px;
+          }  
+    
+    .icon {
+           
+            gap: 10px;
+        }     
+    
+    .container-2 {
+        margin: 71.965px;
+        margin-top: 150px;
+        margin-bottom: 0px;
+        padding: 0px 12px;
+        height: 80vh;
+    
+    }
+    
+    .oval {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%; /* Makes the mask elliptical */
+        background-color: aqua;
+        overflow: hidden;
+    }
+    
+    .Think-outside {
+        height: 100%;
+        width:100%;
+    }
+    
+    .line {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        border-bottom: 2px solid white;
+        width: 50%;
+    }
+    
+    
+    .container-3 {
+        margin: 71.965px;
+        margin-top: 40px;
+        padding: 0px 12px;
+        height: 90vh;
+    }
+    
+    .list-1 {
+
+        list-style-type: none;
+    }
+    
+    .list-container {
+        margin-top: 150px;
+    
+    }
+    
+    
+    .container-4 {
+        display: block;
+        margin: 71.965px;
+        padding: 0px 12px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .grid-container {
+        display: block;
+        margin: 0px;
+        width: 100%;
+        gap: 50px;
+    
+    }
+    
+    .column1-content{
+        gap: 15px;
+        margin: 30px;
+    }
+    
+    .slide4-images {
+        height: 300px;
+        width: 100%; /* Match the width of the container */
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+    
+    .container-5 {
+        margin: 71.965px;
+        padding: 0px 12px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .grid-container-2 {
+        margin-top: 50px;
+        width: 100%;
+        gap: 250px;
+    
+    }
+
+    .container-6 {
+        display: block;
+         margin: 71.965px;
+         height: 90vh;
+     }
+    
+    .slide5-images {
+        height: 400px;
+        width: 100%; /* Match the width of the container */
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+    
+    .Coding-picture {
+        height: 400px;
+        width:100%;
+        object-fit: cover; /* Ensures the image covers the oval completely */
+        transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
+    }
+    
+    .quote {
+        font-size: 45px;
+        text-align: left;
+        justify-self: center;   
+    }
+    
+    .container-7 {
+        margin: 71.965px;
+        margin-bottom: 0px;
+        padding: 0px 12px;
+        display: block;
+        padding: 0px 12px;
+        height: 90vh;
+    
+        
+    }
+    
+    
+    .Text-slide6 {
+        display: block;
+    }
+    
+    .container-8 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px 12px;
+        justify-content: space-between;
+        border-top: 1px solid white;
+        
+    }
+}
