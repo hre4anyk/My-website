@@ -68,23 +68,24 @@ padding-left: 75px;
     padding: 50px; /* Add padding to prevent clipping */
     margin-left: 75px;
     padding-top: 0px;
+    max-width: 45%;
     }
   
 
 .rotated-oval {
-    height: 100%;
-    padding-right: 50px;
+    padding-right: 10px;
     transform: rotate(20deg); /* Rotate the oval */
     border-radius: 50%; /* Makes the mask elliptical */
     overflow: hidden;
     background-color: aqua;
       }
       
-.Nazar-picture {
-        height: 125%;
-        width: 140%;
-        object-fit: cover; /* Ensures the image covers the oval completely */
-        transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
+.Nazar-picture { 
+    position: relative; 
+    margin-top: -50px;
+    margin-left: -120px;
+    object-fit: cover; /* Ensures the image covers the oval completely */
+    transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
             
         }
 
@@ -206,6 +207,8 @@ padding-left: 75px;
  }
 
 .Coding-picture {
+    position: relative;
+    margin-top: -20px;
     height: 125%;
     width: 135%;
     object-fit: cover; /* Ensures the image covers the oval completely */
@@ -216,6 +219,15 @@ padding-left: 75px;
     font-size: 55px;
     text-align: left;
     justify-self: center;   
+}
+
+.oval-2 {
+    height: 100%;
+    padding-right: 0px;
+    transform: rotate(20deg); /* Rotate the oval */
+    border-radius: 50%; /* Makes the mask elliptical */
+    overflow: hidden;
+    background-color: aqua;
 }
 
 .container-7 {
@@ -251,7 +263,7 @@ padding-left: 75px;
 
 @media (max-width:600px) {
 
-    .container, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .grid-container, .grid-container-2 {
+    .container, .container-2, .container-3, .container-4, .container-5, .container-6, .container-7, .container-8, .grid-container, .grid-container-2 {
     display: block;
     }
 
@@ -288,15 +300,18 @@ padding-left: 75px;
     
     
     .container {
-  
-        margin: 71.965px;
-        height: 90vh;
+        margin: 10px;
+        margin-top: 30px;
+        height: 100vh;
+        padding: 0px;
     }
     
     .text-container {
-    padding-left: 0px;
+    padding: 0px;
     text-align: left;
-    margin-bottom: 25px;
+    margin: 0px;
+    margin-bottom: 30px;
+
     
     }
     
@@ -304,36 +319,37 @@ padding-left: 75px;
         outline: 1px solid white;
         border-radius: 50px;
         margin-top: 15px;
-        padding: 25px;
+        padding: 10px;
+        text-align: center;
     }
     
+
+
     .image-container {
+        max-width: 100%;
         padding: 0px; /* Add padding to prevent clipping */
         margin-left: 0px;
         padding-top: 0px;
-        
         }
       
     
     .rotated-oval {
-        width: 300px;
-        height: 100%;
+        max-height: 100%;
+        max-width: 90%;
         padding-right: 0px;
-        transform: rotate(20deg); /* Rotate the oval */
+        transform: rotate(30deg); /* Rotate the oval */
         border-radius: 50%; /* Makes the mask elliptical */
         overflow: hidden;
         background-color: aqua;
-        margin-bottom: 25px;
-        margin-left: 0px;
+    
           }
           
     .Nazar-picture {
-            height: 150%;
-            width: 150%;
-            margin-left: 0px;
-            object-fit: contain; /* Ensures the image covers the oval completely */
-            transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
-                
+        max-width: 100%; 
+        margin: 0px;  
+        object-fit: cover; /* Ensures the image covers the oval completely */
+        transform: rotate(-30deg); /* Corrects image rotation to align with the oval */
+         
             }
     
     .icons {
@@ -341,6 +357,7 @@ padding-left: 75px;
             justify-content: center;
             gap: 10px;
             margin-right: 0px;
+            margin-top: 20px;
           }  
     
     .icon {
@@ -349,29 +366,32 @@ padding-left: 75px;
         }     
     
     .container-2 {
-        margin: 71.965px;
-        margin-top: 150px;
-        margin-bottom: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 100px;
         padding: 0px 12px;
         height: 80vh;
+        padding: 0px;
     
     }
     
     .oval {
-        height: 400px;
-        width: 400px;
+        margin-top: 100px;
+        max-height: 100%;
+        max-width: 90%;
         border-radius: 50%; /* Makes the mask elliptical */
         background-color: aqua;
         overflow: hidden;
     }
     
     .Think-outside {
-        height: 100%;
+        
         width:100%;
+
     }
     
     .line {
-        margin-top: 30px;
+        margin-top: 50px;
         margin-bottom: 50px;
         border-bottom: 2px solid white;
         width: 50%;
@@ -379,37 +399,48 @@ padding-left: 75px;
     
     
     .container-3 {
-        margin: 71.965px;
-        margin-top: 40px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 20px;
         padding: 0px 12px;
         height: 90vh;
+        padding: 0px;
     }
     
     .list-1 {
-
         list-style-type: none;
+        gap: 5px;
+        padding: 10px;
+        max-width: 100%;
     }
     
     .list-container {
-        margin-top: 150px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     
     }
     
     
     .container-4 {
-        display: block;
-        margin: 71.965px;
-        padding: 0px 12px;
+    
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 150px;
         height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0px;
     }
     
     .grid-container {
         display: block;
         margin: 0px;
-        width: 100%;
+        margin-top: 50px;
+        width: 75%;
         gap: 50px;
     
     }
@@ -420,60 +451,81 @@ padding-left: 75px;
     }
     
     .slide4-images {
-        height: 300px;
+        max-height: 300px;
         width: 100%; /* Match the width of the container */
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
     }
     
     .container-5 {
-        margin: 71.965px;
-        padding: 0px 12px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 100px;
         height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0px;
     }
     .grid-container-2 {
+        display: block;
+        margin: 0px;
         margin-top: 50px;
-        width: 100%;
-        gap: 250px;
+        width: 75%;
+        gap: 50px;
     
     }
 
-    .container-6 {
-        display: block;
-         margin: 71.965px;
-         height: 90vh;
-     }
-    
     .slide5-images {
-        height: 400px;
+        max-height: 300px;
         width: 100%; /* Match the width of the container */
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
     }
     
+    .container-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:   ;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 100px;
+         padding: 0px;
+        
+     }
+    
+     .oval-2 {
+        padding: 0px;
+        margin-top: 0px;
+        max-height  : 100%;
+        max-width: 100%;
+        border-radius: 50%; /* Makes the mask elliptical */
+        background-color: aqua;
+        overflow: hidden;
+    }
+    
     .Coding-picture {
-        height: 400px;
         width:100%;
-        object-fit: cover; /* Ensures the image covers the oval completely */
-        transform: rotate(-20deg); /* Corrects image rotation to align with the oval */
     }
     
     .quote {
+      
         font-size: 45px;
-        text-align: left;
-        justify-self: center;   
-    }
-    
-    .container-7 {
-        margin: 71.965px;
+        text-align: center;
         margin-bottom: 0px;
-        padding: 0px 12px;
+        max-width: 90%;   
+    }
+
+
+    .container-7 {
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 100px;
+        margin-bottom: 0px;
         display: block;
-        padding: 0px 12px;
-        height: 90vh;
+        height: 80vh;
+        padding: 0px;
     
         
     }
@@ -484,11 +536,19 @@ padding-left: 75px;
     }
     
     .container-8 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 0px 12px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 30px;   
+        padding: 0px;
+        display: flex;
         justify-content: space-between;
         border-top: 1px solid white;
+       
         
     }
+    
 }
+
+
+  
+ 
