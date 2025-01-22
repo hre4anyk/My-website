@@ -445,8 +445,11 @@ padding-left: 75px;
     }
     
     .column1-content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
         gap: 15px;
-        margin: 30px;
+        margin-bottom: 30px;
     }
     
     .slide4-images {
